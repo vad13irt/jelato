@@ -1,0 +1,112 @@
+@import "nullstyles";
+@import "location";
+@import "header";
+@import "footer";
+@import "config";
+
+
+.home__ice-cream {
+    position: absolute;
+    z-index: 0;
+    top: 15%;
+}
+
+
+.tasty__item:nth-child(odd) {
+   @include block-image("../images/index/baac51_dce92e80d8174b64b0505698a8444b3d.webp");
+}
+
+.tasty__item:nth-child(even) {
+    @include block-info(flex-start);
+}
+
+.tasty__image {
+    height: 100%;
+    position: relative;
+    right: 50%;
+}
+
+.info {
+   max-width: 350px;
+   height: 300px;
+}
+
+@include empty-block("milk", "../images/index/pink-cubed-klubnichnoe.jpg");
+@include empty-block("events", "../images/index/Mars-defends-use-of-artificial-colors-in-M-Ms-as-CSPI-backed-petition-urges-it-to-ditch-neurotoxic-chemicals_wrbm_large.jpg");
+
+
+.welcome__item:nth-child(2) {
+    @include block-image("../images/index/colors-table-chair-cafe.jpg");
+}
+
+.welcome__item:nth-child(1) {
+    @include block-info(flex-end);
+}
+
+.desserts__item:nth-child(1) {
+    @include block-image("../images/index/baac51_eef1e420f03948978a0f613646ebe50b.webp");
+ }
+ 
+ .desserts__item:nth-child(2) {
+     @include block-info(flex-start);
+ }
+
+ .creams {
+    @include background-image("../images/index/blue-stripes-white-streaks-lines-1920x1080-c2-afeeee-ffffff-l2-217-351-a-60-f-1.svg");
+    background-repeat: repeat;
+    background-size: initial;
+    height: 850px;
+ }
+
+ .creams__container {
+    max-width: 75%;
+ }
+
+ .creams__items {
+     align-items: center;
+     justify-content: space-evenly;
+ }
+
+ .images {
+    height: 700px;
+    background-color: #fff;
+ }
+
+.images__items {
+    justify-content: space-between;
+}
+
+
+
+ .images__hashtag {
+     color: #000;
+     text-transform: uppercase;
+     word-spacing: 5px;
+     font-size: 35px;
+     margin-top: 75px;
+ }
+
+ .images__imgs {
+    display: flex;
+    flex-wrap: nowrap;
+
+ }
+
+ .images__img {
+     width: 500px;
+     height: 500px;
+     opacity: .7;
+     filter: blur(1px);
+     transition-duration: 1s;
+     &:hover {
+         transition-duration: 1s;
+         opacity: 1;
+         filter: blur(0px);
+     }
+ }
+
+ .images__img_view {
+     @extend .images__img;
+     opacity: 1;
+     filter: blur(0px);
+ }

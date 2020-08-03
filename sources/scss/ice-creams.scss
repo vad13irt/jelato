@@ -1,0 +1,90 @@
+@import "nullstyles";
+@import "location";
+@import "header";
+@import "footer";
+@import "config";
+
+
+.present {
+    background-color: #B5E8D5;
+    height: 50vh;
+}
+
+.present .items {
+    height: 45vh;
+}
+
+.present .item {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    padding: 100px 0;
+}
+
+.menu__container {
+    max-width: 1000px;
+}
+
+
+.creams {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.menu__cream {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px;
+    width: 275px;
+    padding-bottom: 25px;
+}
+
+.mtitle {
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: thin;
+}
+
+.menu__cream-image {
+   max-width: 100%;
+   object-fit: cover;
+}
+
+.menu__cream-name {
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid black;
+    padding: 15px 0;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.menu__cream-description {
+    color: #000;
+    text-align: center;
+    font-size: 17.5px;
+    padding: 10px 0;
+    letter-spacing: 1px;
+}
+
+.menu__cream-price {
+    color: #000;
+    font-size: 15px;
+    padding: 10px 0;
+    letter-spacing: 1px;
+} 

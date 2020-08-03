@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Marck+Script&family=Open+Sans+Condensed:wght@700&display=swap');
+
+@mixin background-image($image) {
+    background-image: url($image);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@mixin block-image($image) {
+    @include background-image($image);
+    background-attachment: initial;
+    background-size: cover;
+}
+
+@mixin  block-info ($justify-content){
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    justify-content: $justify-content;
+}
+
+@mixin empty-block ($block, $image) {
+    .#{$block} {
+        @include background-image($image);
+        height: 750px;
+    }
+
+    .#{$block}__items {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,46 @@
+@import "nullstyles";
+@import "location";
+@import "header";
+@import "footer";
+@import "config";
+
+.present {
+    background-color: #C3A9D4;
+    height: 50vh;
+}
+
+.present .items {
+    height: 45vh;
+}
+
+.present .item {
+    display: flex;
+    justify-content: center;
+}
+
+.block {
+    height: auto;
+    box-sizing: unset;
+    padding: 50px 0;
+}
+
+.info {
+    max-width: 750px;
+    min-height: 400px;
+}
+
+.welcome__item:nth-child(1) {
+    width: auto;
+    box-sizing: unset;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+@include empty-block("empty", "../images/about/colors-table-chair-cafe.jpg");
+
+.fabric__item:nth-child(1) {
+    width: auto;
+    box-sizing: unset;
+    padding: 0 50px;
+    margin: 0 auto;
+}
